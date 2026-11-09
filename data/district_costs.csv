@@ -1,0 +1,437 @@
+district_code,district_name,ftes,comp_2009_per_fte,comp_now_per_fte,added_cost_override,source
+7,Abbotsford,64.00,63214,73400,,auto
+14,Adams-Friendship Area,142.31,71934,88616,,auto
+63,Albany,46.40,60706,76646,,auto
+70,Algoma,78.13,66111,77088,,auto
+84,Alma,27.86,73767,71588,,auto
+91,Alma Center,58.68,70119,80302,,auto
+105,Almond-Bancroft,41.13,61370,75457,,auto
+112,Altoona,171.47,80006,80901,,auto
+119,Amery,136.23,80839,90399,,auto
+126,Tomorrow River,107.07,74721,93847,,auto
+140,Antigo,151.40,73482,84471,,auto
+147,Appleton Area,1388.94,87220,90731,,auto
+154,Arcadia,118.36,71544,83566,,auto
+161,Argyle,33.56,63454,83542,,auto
+168,Arkansaw,,,,,
+170,Ashland,167.00,73476,83169,,auto
+182,Ashwaubenon,264.25,78507,104010,,auto
+196,Athens,40.18,69636,79852,,auto
+203,Auburndale,71.74,71178,88418,,auto
+217,Augusta,69.90,73597,83588,,auto
+231,Baldwin-Woodville Area,139.99,75213,94896,,auto
+238,Unity,89.20,74439,78046,,auto
+245,Bangor,65.31,68507,78915,,auto
+280,Baraboo,270.78,74458,77925,,auto
+287,Barneveld,42.50,73916,88766,,auto
+308,Barron Area,112.95,77852,80287,,auto
+315,Bayfield,25.86,76168,100679,,auto
+336,Beaver Dam,281.46,73302,88544,,auto
+350,Belleville,91.78,75059,90618,,auto
+364,Belmont Community,44.53,64049,71310,,auto
+413,Beloit,449.63,87151,93706,,auto
+422,Beloit Turner,136.87,74951,85402,,auto
+427,Benton,28.47,64636,68781,,auto
+434,Berlin Area,122.37,69586,81380,,auto
+441,Birchwood,35.67,67521,76226,,auto
+469,Wisconsin Heights,80.50,69007,79687,,auto
+476,Black River Falls,147.42,64416,78555,,auto
+485,Blair-Taylor,60.86,66084,85555,,auto
+490,Pecatonica Area,47.90,70719,85657,,auto
+497,Bloomer,113.35,73803,87037,,auto
+539,Bloomington,,,,,
+602,Bonduel,71.95,72154,93279,,auto
+609,Boscobel,71.37,76151,76242,,auto
+616,Boulder Junction J1,21.16,73941,97273,,auto
+623,Bowler,42.65,67846,86115,,auto
+637,Boyceville Community,63.15,75988,87877,,auto
+657,Brighton #1,16.80,72779,88258,,auto
+658,Brillion,85.70,67619,94017,,auto
+665,Bristol #1,66.99,81727,97463,,auto
+700,Brodhead,94.37,79233,101422,,auto
+714,Elmbrook,609.40,91065,108103,,auto
+721,Brown Deer,147.09,77191,85147,,auto
+735,Bruce,45.30,78541,80083,,auto
+777,Burlington Area,237.53,86603,101455,,auto
+840,Butternut,27.88,62638,76830,,auto
+870,Cadott Community,85.64,71658,90550,,auto
+882,Cambria-Friesland,35.57,76259,86996,,auto
+896,Cambridge,83.85,66759,84305,,auto
+903,Cameron,100.07,67475,89378,,auto
+910,Campbellsport,125.55,72248,81593,,auto
+980,Cashton,66.90,62553,82110,,auto
+994,Cassville,28.70,68265,71442,,auto
+1015,Cedarburg,238.79,78735,103343,,auto
+1029,Cedar Grove-Belgium Area,80.13,72139,92188,,auto
+1071,Chequamegon,66.80,71041,95213,,auto
+1078,Chetek,,,,,
+1080,Chetek - Weyerhaeuser,,,,,
+1085,Chilton,93.14,69207,89168,,auto
+1092,Chippewa Falls Area,378.75,70061,92418,,auto
+1120,Clayton,35.40,70707,85795,,auto
+1127,Clear Lake,54.61,70266,78428,,auto
+1134,Clinton Community,96.04,76222,81902,,auto
+1141,Clintonville,110.83,74888,79682,,auto
+1155,Cochrane-Fountain City,51.42,69834,76125,,auto
+1162,Colby,81.21,69321,78138,,auto
+1169,Coleman,67.86,75407,87574,,auto
+1176,Colfax,66.65,79948,82136,,auto
+1183,Columbus,115.17,72460,82165,,auto
+1204,Cornell,32.04,71134,94995,,auto
+1218,Crandon,77.40,84766,91650,,auto
+1232,Crivitz,72.76,76423,92679,,auto
+1246,Cuba City,72.23,78173,78224,,auto
+1253,Cudahy,193.02,89490,91450,,auto
+1260,Cumberland,91.97,83620,94374,,auto
+1295,Darlington Community,85.39,75627,85338,,auto
+1309,Deerfield Community,78.71,67461,81050,,auto
+1316,Deforest Area,377.32,69201,92815,,auto
+1376,Kettle Moraine,282.34,87676,106135,,auto
+1380,Delavan-Darien,185.20,79681,84802,,auto
+1407,Denmark,134.44,75342,84810,,auto
+1414,Depere,360.98,75614,102061,,auto
+1421,Desoto Area,47.11,67302,70496,,auto
+1428,Dodgeville,102.08,72104,79025,,auto
+1449,Dover #1,8.61,68570,82261,,auto
+1491,Drummond,34.31,71487,97147,,auto
+1498,Durand,,,,,
+1499,Durand-Arkansaw,92.98,79230,83389,,auto
+1526,Northland Pines,135.25,73057,94210,,auto
+1540,East Troy Community,144.64,80989,80733,,auto
+1554,Eau Claire Area,1011.59,80198,93461,,auto
+1561,Edgar,51.29,73701,82901,,auto
+1568,Edgerton,166.03,75061,81567,,auto
+1582,Elcho,29.01,68042,80775,,auto
+1600,Eleva-Strum,65.84,65141,84709,,auto
+1631,Elkhart Lake-Glenbeulah,48.51,75178,83815,,auto
+1638,Elkhorn Area,292.58,82446,98951,,auto
+1645,Elk Mound Area,101.76,77000,96361,,auto
+1659,Ellsworth Community,146.81,79233,83799,,auto
+1666,Elmwood,38.97,72889,75596,,auto
+1673,Royall,47.77,66593,88071,,auto
+1687,Erin,31.17,72986,90550,,auto
+1694,Evansville Community,136.89,73847,85879,,auto
+1729,Fall Creek,75.18,77695,94888,,auto
+1736,Fall River,47.41,72146,84024,,auto
+1813,Fennimore Community,74.25,75818,91555,,auto
+1848,Lac Du Flambeau #1,79.26,79027,111035,,auto
+1855,Florence,43.90,68187,85340,,auto
+1862,Fond Du Lac,599.96,87006,94394,,auto
+1870,Fontana J8,29.50,71455,82279,,auto
+1883,Fort Atkinson,231.35,73000,98331,,auto
+1890,Fox Point J2,92.92,89799,98034,,auto
+1897,Maple Dale-Indian Hill,50.50,96259,164044,,auto
+1900,Franklin Public,356.51,91029,96866,,auto
+1939,Frederic,47.40,72790,73202,,auto
+1945,Northern Ozaukee,87.51,77503,86338,,auto
+1953,Freedom Area,134.70,75177,97141,,auto
+2009,Galesville-Ettrick,136.87,70795,88942,,auto
+2016,North Crawford,50.71,68281,77199,,auto
+2044,Geneva J4,18.12,74831,97549,,auto
+2051,Genoa City J2,49.98,74477,86755,,auto
+2058,Germantown,302.69,83818,91771,,auto
+2114,Gibraltar Area,78.26,78299,99252,,auto
+2128,Gillett,60.73,70181,71663,,auto
+2135,Gilman,30.82,68078,97508,,auto
+2142,Gilmanton,17.22,57252,78289,,auto
+2177,Nicolet UHS,104.81,103315,118918,,auto
+2184,Glendale-River Hills,109.40,83028,96968,,auto
+2198,Glenwood City,58.10,72875,81054,,auto
+2205,Glidden,,,,,
+2212,Goodman-Armstrong,16.20,67987,65738,,auto
+2217,Grafton,172.63,81703,97015,,auto
+2226,Granton Area,24.35,63876,67979,,auto
+2233,Grantsburg,127.38,65065,98460,,auto
+2240,Black Hawk,40.40,71550,87209,,auto
+2289,Green Bay Area,1851.76,77765,93503,,auto
+2296,Greendale,231.28,86934,100871,,auto
+2303,Greenfield,318.67,87430,98793,,auto
+2310,Green Lake,36.74,70239,75991,,auto
+2394,Greenwood,41.79,65672,77616,,auto
+2415,Gresham,33.19,58201,83627,,auto
+2420,Hamilton,363.00,82956,115937,,auto
+2422,Saint Croix Central,158.43,77238,96609,,auto
+2436,Hartford UHS,95.32,92326,100846,,auto
+2443,Hartford J1,127.25,82278,91870,,auto
+2450,Arrowhead UHS,134.28,90285,114307,,auto
+2460,Hartland-Lakeside J3,95.15,87499,92600,,auto
+2478,Hayward Community,171.39,72324,94813,,auto
+2485,Southwestern Wisconsin,59.20,74364,78070,,auto
+2523,Herman #22,,,,,
+2525,Herman-Neosho-Rubicon,,,,,
+2527,Highland,30.78,64396,80839,,auto
+2534,Hilbert,46.06,72710,82747,,auto
+2541,Hillsboro,55.12,65825,84089,,auto
+2562,Holmen,371.84,72433,90340,,auto
+2570,Holy Hill Area,,,,,
+2576,Horicon,71.48,85996,85440,,auto
+2583,Hortonville,340.98,69745,86043,,auto
+2604,Howard-Suamico,490.35,71742,92806,,auto
+2605,Howards Grove,77.75,74239,78646,,auto
+2611,Hudson,439.26,73590,95418,,auto
+2618,Hurley,45.05,71794,92771,,auto
+2625,Hustisford,35.00,71968,84281,,auto
+2632,Independence,44.30,63159,81125,,auto
+2639,Iola-Scandinavia,58.84,71246,89010,,auto
+2646,Iowa-Grant,68.65,72959,85697,,auto
+2660,Ithaca,38.23,58095,79055,,auto
+2695,Janesville,908.51,74028,82708,,auto
+2702,Jefferson,164.20,72335,90542,,auto
+2730,Johnson Creek,68.60,74058,77620,,auto
+2737,Juda,31.35,64149,74774,,auto
+2744,Dodgeland,73.96,74997,77483,,auto
+2758,Kaukauna Area,330.63,89143,96501,,auto
+2793,Kenosha,1543.42,48962,102375,,auto
+2800,Kewaskum,147.55,81720,88077,,auto
+2814,Kewaunee,92.64,69129,84663,,auto
+2828,Kiel Area,112.24,70786,96707,,auto
+2835,Kimberly Area,391.61,66910,94651,,auto
+2842,Kohler,61.04,83929,87445,,auto
+2849,Lacrosse,663.59,83364,153330,,auto
+2856,Ladysmith-Hawkins,76.07,75791,76481,,auto
+2863,Lafarge,32.04,64306,79379,,auto
+2884,Lake Geneva-Genoa UHS,113.99,79517,103208,,auto
+2885,Lake Geneva J1,149.14,75436,104664,,auto
+2891,Lake Holcombe,31.77,71229,82611,,auto
+2898,Lake Mills Area,137.40,76253,85470,,auto
+2912,Lancaster Community,96.77,74873,92313,,auto
+2940,Laona,30.80,76450,88999,,auto
+2961,Lena,37.22,68781,74963,,auto
+3087,Linn J4,16.50,63852,67718,,auto
+3094,Linn J6,18.00,55159,82703,,auto
+3122,Richmond,35.00,87983,90548,,auto
+3129,Little Chute Area,137.25,76909,89750,,auto
+3150,Lodi,142.13,68068,82966,,auto
+3171,Lomira,87.16,86438,92812,,auto
+3206,Loyal,47.90,73265,82795,,auto
+3213,Luck,47.15,72332,73827,,auto
+3220,Luxemburg-Casco,166.93,68223,93249,,auto
+3269,Madison Metropolitan,2730.83,75558,100923,,auto
+3276,Manawa,53.60,67891,59702,,auto
+3290,Manitowoc,464.60,76836,94913,,auto
+3297,Maple,105.62,68991,81642,,auto
+3304,Marathon City,65.57,79641,84902,,auto
+3311,Marinette,160.14,75112,89903,,auto
+3318,Marion,48.65,60256,81551,,auto
+3325,Markesan,68.42,74998,84822,,auto
+3332,Marshall,101.29,68805,81346,,auto
+3339,Marshfield,293.95,88868,100025,,auto
+3360,Mauston,116.20,67154,83972,,auto
+3367,Mayville,85.49,77639,88367,,auto
+3381,McFarland,435.89,66704,74432,,auto
+3409,Medford Area,300.40,76018,84539,,auto
+3427,Mellen,25.80,58554,77701,,auto
+3428,Melrose-Mindoro,71.64,67693,82049,,auto
+3430,Menasha,326.75,76158,89844,,auto
+3434,Menominee Indian,118.09,71191,88170,,auto
+3437,Menomonee Falls,329.14,81099,94663,,auto
+3444,Menomonie Area,271.43,82339,89909,,auto
+3479,Mequon-Thiensville,302.95,95297,105692,,auto
+3484,Mercer,18.00,64207,78233,,auto
+3500,Merrill Area,218.00,81490,86246,,auto
+3510,Swallow,37.91,95308,107700,,auto
+3514,North Lake,28.18,81826,89928,,auto
+3528,Merton Community,74.88,84212,90216,,auto
+3542,Stone Bank School District,25.75,88048,86218,,auto
+3549,Middleton-Cross Plains,685.36,65955,94724,,auto
+3612,Milton,267.65,73588,90132,,auto
+3619,Milwaukee,4836.10,86297,97222,,auto
+3633,Mineral Point,76.40,70715,89636,,auto
+3640,Minocqua J1,59.30,82270,91686,,auto
+3647,Lakeland UHS,72.72,85523,98213,,auto
+3654,Northwood,37.13,69205,71039,,auto
+3661,Mishicot,77.51,65535,88318,,auto
+3668,Mondovi,89.43,77188,84583,,auto
+3675,Monona Grove,370.93,67545,88998,,auto
+3682,Monroe,198.24,68606,87529,,auto
+3689,Montello,77.75,73243,79889,,auto
+3696,Monticello,38.10,65789,78661,,auto
+3787,Mosinee,170.16,80746,82693,,auto
+3794,Mount Horeb Area,207.68,72159,97023,,auto
+3822,Mukwonago,389.28,83230,93070,,auto
+3850,Riverdale,61.29,80580,99241,,auto
+3857,Muskego-Norway,367.85,91341,103341,,auto
+3862,Lake Country,33.98,94005,96352,,auto
+3871,Necedah Area,71.73,63276,77916,,auto
+3892,Neenah,532.72,81929,85150,,auto
+3899,Neillsville,73.90,80375,78423,,auto
+3906,Nekoosa,107.56,75050,91105,,auto
+3913,Neosho J3,,,,,
+3920,New Auburn,29.48,56744,78999,,auto
+3925,New Berlin,344.84,73455,92791,,auto
+3934,New Glarus,88.89,68290,98054,,auto
+3941,New Holstein,86.51,68324,85886,,auto
+3948,New Lisbon,59.79,68008,80027,,auto
+3955,New London,182.45,76500,86597,,auto
+3962,New Richmond,297.60,79138,92369,,auto
+3969,Niagara,44.91,57255,88804,,auto
+3976,Norris,15.50,69088,89430,,auto
+3983,North Fond Du Lac,126.19,80508,88790,,auto
+3990,Norwalk-Ontario-Wilton,64.10,66936,85459,,auto
+4011,Norway J7,12.37,77025,76622,,auto
+4018,Oak Creek-Franklin,503.05,83596,101941,,auto
+4025,Oakfield,57.30,74399,78880,,auto
+4060,Oconomowoc Area,413.53,84291,90186,,auto
+4067,Oconto,88.49,75102,86978,,auto
+4074,Oconto Falls,157.39,72546,81147,,auto
+4088,Omro,102.12,71701,84177,,auto
+4095,Onalaska,263.60,71882,89491,,auto
+4137,Oostburg,81.26,74070,94070,,auto
+4144,Oregon,405.89,66942,95371,,auto
+4151,Parkview,74.51,79148,80705,,auto
+4165,Osceola,128.64,72105,91411,,auto
+4179,Oshkosh Area,949.76,75056,97913,,auto
+4186,Osseo-Fairchild,83.76,66915,78384,,auto
+4207,Owen-Withee,43.83,69522,78805,,auto
+4221,Palmyra-Eagle Area,66.87,72626,71614,,auto
+4228,Pardeeville Area,76.35,75826,92204,,auto
+4235,Paris J1,19.60,87898,102720,,auto
+4242,Park Falls,,,,,
+4249,West Grant,,,,,
+4263,Beecher-Dunbar-Pembine,28.86,81336,96321,,auto
+4270,Pepin Area,26.64,64365,87817,,auto
+4305,Peshtigo,88.60,78387,91010,,auto
+4312,Pewaukee,219.57,85695,102888,,auto
+4330,Phelps,17.89,61303,90717,,auto
+4347,Phillips,67.21,70916,81734,,auto
+4368,Pittsville,62.79,68588,80890,,auto
+4375,Tri-County Area,56.13,82683,87153,,auto
+4389,Platteville,142.00,85301,84708,,auto
+4459,Plum City,30.02,74834,74167,,auto
+4473,Plymouth,181.63,78441,87353,,auto
+4501,Portage Community,181.27,71174,88682,,auto
+4508,Port Edwards,43.39,68188,75437,,auto
+4515,Port Washington-Saukville,223.55,92256,91255,,auto
+4522,South Shore,24.68,69805,84469,,auto
+4529,Potosi,38.35,68056,81862,,auto
+4536,Poynette,100.70,71644,84503,,auto
+4543,Prairie Du Chien Area,94.62,75424,79803,,auto
+4557,Prairie Farm,37.47,72128,75102,,auto
+4571,Prentice,36.50,68878,87963,,auto
+4578,Prescott,102.04,75791,82713,,auto
+4606,Princeton,34.75,76103,83413,,auto
+4613,Pulaski Community,344.77,76317,91521,,auto
+4620,Racine,1494.33,88453,107135,,auto
+4627,Randall J1,56.06,82929,81732,,auto
+4634,Randolph,52.72,70264,92218,,auto
+4641,Random Lake,71.06,73833,80371,,auto
+4686,Raymond #14,36.55,91261,93705,,auto
+4690,North Cape,20.00,74042,82668,,auto
+4753,Reedsburg,232.00,78373,91101,,auto
+4760,Reedsville,60.90,71661,83887,,auto
+4781,Rhinelander,230.26,81612,93838,,auto
+4795,Rib Lake,49.87,78269,86890,,auto
+4802,Rice Lake Area,213.78,72531,89621,,auto
+4820,Richfield J1,,,,,
+4843,Friess Lake,,,,,
+4851,Richland,131.77,73839,84645,,auto
+4865,Rio Community,44.18,71246,86576,,auto
+4872,Ripon Area,153.76,76625,86442,,auto
+4893,River Falls,271.61,80438,92021,,auto
+4904,River Ridge,50.72,73148,81278,,auto
+4956,Rosendale-Brandon,74.77,74022,86973,,auto
+4963,Rosholt,40.95,76781,90495,,auto
+4970,D C Everest Area,492.79,82189,95380,,auto
+4998,Rubicon J6,,,,,
+5019,Saint Croix Falls,95.25,79541,93943,,auto
+5026,Saint Francis,91.76,80782,93990,,auto
+5054,Central/Westosha UHS,89.38,86088,100251,,auto
+5061,Trevor Grade,,,,,
+5068,Salem,83.00,94501,89544,,auto
+5075,Wilmot Grade School,,,,,
+5100,Sauk Prairie,245.57,70169,88269,,auto
+5124,Seneca,24.86,73891,75435,,auto
+5130,Sevastopol,59.50,76549,92699,,auto
+5138,Seymour Community,169.35,79954,94667,,auto
+5258,Sharon J11,22.60,65566,70717,,auto
+5264,Shawano,179.58,71019,80153,,auto
+5271,Sheboygan Area,785.59,85249,94395,,auto
+5278,Sheboygan Falls,140.97,71914,83601,,auto
+5306,Shell Lake,60.50,68958,80950,,auto
+5348,Shiocton,77.20,74167,82842,,auto
+5355,Shorewood,163.40,88514,103707,,auto
+5362,Shullsburg,40.80,68164,77495,,auto
+5369,Silver Lake J1,38.17,81447,98222,,auto
+5376,Siren,48.77,64287,81772,,auto
+5390,Slinger,237.15,87976,106027,,auto
+5397,Solon Springs,36.84,67643,70671,,auto
+5432,Somerset,122.21,76535,91565,,auto
+5439,South Milwaukee,265.13,90101,96370,,auto
+5457,Southern Door County,99.89,72152,79742,,auto
+5460,Sparta Area,279.67,64882,78799,,auto
+5467,Spencer,52.51,85064,84598,,auto
+5474,Spooner,96.22,80545,94081,,auto
+5523,River Valley,114.00,72848,91854,,auto
+5586,Spring Valley,60.08,76730,87245,,auto
+5593,Stanley-Boyd Area,94.00,73988,91017,,auto
+5607,Stevens Point Area,588.66,89401,97454,,auto
+5614,Stockbridge,24.85,63381,66743,,auto
+5621,Stoughton Area,250.82,72830,96127,,auto
+5628,Stratford,69.06,75306,90890,,auto
+5642,Sturgeon Bay,117.86,76694,80898,,auto
+5656,Sun Prairie Area,874.92,71592,80669,,auto
+5663,Superior,354.40,79093,88914,,auto
+5670,Suring,39.61,77078,80064,,auto
+5726,Thorp,46.10,69547,79788,,auto
+5733,Three Lakes,57.50,80737,107920,,auto
+5740,Tigerton,28.23,66915,81212,,auto
+5747,Tomah Area,266.36,69090,81684,,auto
+5754,Tomahawk,107.77,79347,88527,,auto
+5757,Flambeau,50.19,70185,73086,,auto
+5780,Trevor-Wilmot Consolidated,45.56,78071,87026,,auto
+5810,Turtle Lake,48.22,77280,82572,,auto
+5817,Twin Lakes #4,35.60,85671,80357,,auto
+5824,Two Rivers,172.99,77629,82460,,auto
+5852,Union Grove UHS,74.66,84999,104876,,auto
+5859,Union Grove J1,72.62,81480,98440,,auto
+5866,Valders Area,86.77,77603,89699,,auto
+5901,Verona Area,556.43,77214,103469,,auto
+5960,Kickapoo Area,47.30,71099,90514,,auto
+5985,Viroqua Area,98.44,70038,89756,,auto
+5992,Wabeno Area,46.26,71055,82538,,auto
+6013,Big Foot UHS,39.32,80853,85631,,auto
+6022,Walworth J1,39.25,72837,91755,,auto
+6027,Washburn,54.38,72349,93199,,auto
+6069,Washington,13.40,78627,69677,,auto
+6083,Waterford UHS,105.83,81340,106069,,auto
+6104,Washington-Caldwell,16.40,76906,94008,,auto
+6113,Waterford Graded,118.15,74621,84573,,auto
+6118,Waterloo,75.77,68895,78166,,auto
+6125,Watertown,290.70,82244,84868,,auto
+6174,Waukesha,950.10,92902,98008,,auto
+6181,Waunakee Community,427.76,69397,97020,,auto
+6195,Waupaca,195.96,74604,81920,,auto
+6216,Waupun,161.94,82866,84442,,auto
+6223,Wausau,754.37,85658,89236,,auto
+6230,Wausaukee,40.00,70836,83407,,auto
+6237,Wautoma Area,118.50,72026,82382,,auto
+6244,Wauwatosa,672.56,75436,85073,,auto
+6251,Wauzeka-Steuben,29.77,58554,78101,,auto
+6293,Webster,64.33,67657,82204,,auto
+6300,West Allis,642.40,79243,86089,,auto
+6307,West Bend,440.56,82153,101115,,auto
+6321,Westby Area,99.40,66335,84744,,auto
+6328,West Depere,289.94,75908,90392,,auto
+6335,Westfield,98.00,68541,81235,,auto
+6354,Weston,31.20,67946,74878,,auto
+6370,West Salem,166.60,65283,81982,,auto
+6384,Weyauwega-Fremont,75.15,72587,76433,,auto
+6410,Weyerhaeuser Area,,,,,
+6412,Wheatland J1,51.96,82932,93582,,auto
+6419,Whitefish Bay,222.74,80896,99726,,auto
+6426,Whitehall,73.93,73478,98028,,auto
+6440,White Lake,19.85,69189,81339,,auto
+6461,Whitewater,197.30,76220,80287,,auto
+6470,Whitnall,216.15,81853,87191,,auto
+6475,Wild Rose,53.26,70967,87982,,auto
+6482,Williams Bay,61.68,78981,91847,,auto
+6545,Wilmot UHS,68.95,89479,109233,,auto
+6608,Winneconne Community,152.99,73820,83775,,auto
+6615,Winter,26.24,71256,71770,,auto
+6678,Wisconsin Dells,161.77,74218,83912,,auto
+6685,Wisconsin Rapids,408.52,81132,93998,,auto
+6692,Wittenberg-Birnamwood,102.73,69325,76687,,auto
+6713,Wonewoc-Union Center,38.35,64054,72252,,auto
+6720,Woodruff J1,53.50,77227,84397,,auto
+6734,Wrightstown Community,112.57,71716,90589,,auto
+6748,Yorkville J2,41.44,70806,93630,,auto

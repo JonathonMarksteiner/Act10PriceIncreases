@@ -1,0 +1,8 @@
+__pycache__/
+reports/
+data/app.log
+data/settings.json
+data/dpi_*.xlsx
+data/_*.csv
+nohup.out
+.DS_Store
