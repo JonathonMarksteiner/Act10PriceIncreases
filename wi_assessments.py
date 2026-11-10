@@ -133,10 +133,11 @@ def get_json(params, retries=4):
             if "error" in data:
                 err = data["error"]
                 code = err.get("code") if isinstance(err, dict) else None
-                msg = str(err.get("message", "")) if isinstance(err, dict) else ""
+                msg = (str(err.get("message", "")) + " " + str(err.get("details", ""))) if isinstance(err, dict) else ""
                 # ArcGIS Online sometimes returns a spurious 400 "Cannot perform query" under load.
                 if isinstance(code, int) and (code == 429 or code >= 500
-                                              or "Cannot perform query" in msg):
+                                              or "Cannot perform query" in msg
+                                              or "Unable to perform query" in msg):
                     raise TransientError(f"service error {err}")
                 raise RuntimeError(f"Service error: {err}")
             return data

@@ -55,6 +55,7 @@ WILL_STATEWIDE_COST = 1_788_000_000
 WILL_AVG_HOME_INCREASE = 624
 PARCEL_FIELDS = ["SCHOOLDIST", "SCHOOLDISTNO", "CONAME", "PARCELID", "SITEADRESS", "PLACENAME",
                  "PROPCLASS", "ESTFMKVALUE", "CNTASSDVALUE", "LNDVALUE", "IMPVALUE", "TAXROLLYEAR"]
+OWNER_FIELDS = ["OWNERNME1", "OWNERNME2", "PSTLADRESS"]   # only fetched when the user opts in
 
 
 # ---------------------------------------------------------------- xlsx (stdlib reader)
@@ -434,9 +435,15 @@ def autofill_costs():
 
 
 # ---------------------------------------------------------------- parcels
-def fetch_district_parcels(code, progress=None):
-    where = f"SCHOOLDISTNO='{int(code):04d}'"
-    return list(wa.fetch_county(where, "OBJECTID", True, fields=PARCEL_FIELDS, progress=progress))
+def fetch_district_parcels(code, progress=None, include_owners=False):
+    """Parcels with a site address only; (parcels, number excluded for having no address)."""
+    base = f"SCHOOLDISTNO='{int(code):04d}'"
+    where = base + " AND SITEADRESS IS NOT NULL AND SITEADRESS <> ''"
+    total = wa.get_json({"where": base, "returnCountOnly": "true", "f": "json"}).get("count", 0)
+    parcels = list(wa.fetch_county(where, "OBJECTID", True, fields=PARCEL_FIELDS + (OWNER_FIELDS if include_owners else []), progress=progress))
+    # blank-but-not-empty addresses (spaces) are dropped here as well
+    parcels = [p for p in parcels if (p.get("SITEADRESS") or "").strip()]
+    return parcels, max(0, total - len(parcels))
 
 
 def parcel_value(p):
@@ -453,7 +460,7 @@ def is_home(p):
 
 
 # ---------------------------------------------------------------- calculation
-def compute(code, parcels, home_value, added_override=None):
+def compute(code, parcels, home_value, added_override=None, include_owners=False):
     dpi = load_dpi()
     d = dpi["districts"][int(code)]
     s = load_settings()
@@ -517,6 +524,9 @@ def compute(code, parcels, home_value, added_override=None):
             "value_used": v or None, "assessed_land": p.get("LNDVALUE"),
             "assessed_improvements": p.get("IMPVALUE"), "tax_roll_year": p.get("TAXROLLYEAR"),
             "estimated_annual_increase": round(v * share, 2) if (share is not None and v) else None})
+        if include_owners:
+            rows[-1].update(owner_name_1=p.get("OWNERNME1"), owner_name_2=p.get("OWNERNME2"),
+                            owner_mailing_address=p.get("PSTLADRESS"))
     return summary, home_table, munis, rows
 
 
@@ -559,11 +569,12 @@ def render_report(summary, home_table, munis):
                 "(or an added-cost figure). The sensitivity table shows the effect of any amount.</p>")
     kv = [
         ("School district", f"{e(s['district'])} (DPI code {s['district_code']})"),
-        ("Parcels in district / residential", f"{_n(s['parcels'])} / {_n(s['residential_parcels'])}"),
+        ("Parcels with an address / residential", f"{_n(s['parcels'])} / {_n(s['residential_parcels'])}"),
+        ("Parcels skipped (no site address)", _n(s.get("parcels_excluded_no_address"))),
         (f"Equalized value, TIF-out (DPI {s['dpi_value_year']})", _m(s["district_equalized_value_tif_out"])),
         ("Equalized value, TIF-in", _m(s["district_equalized_value_tif_in"])),
-        ("Parcel-layer value (market-value basis)", _m(s["parcel_total_value"])),
-        ("Parcel value / equalized value", _n((s["parcel_value_vs_equalized"] or 0) * 100, 1) + "%"
+        ("Value of addressed parcels (market-value basis)", _m(s["parcel_total_value"])),
+        ("Addressed-parcel value / equalized value", _n((s["parcel_value_vs_equalized"] or 0) * 100, 1) + "%"
          if s["parcel_value_vs_equalized"] else "n/a"),
         ("Median / average home", f"{_m(s['median_home_value'])} / {_m(s['average_home_value'])}"),
         (f"Prior school tax rate (per $1,000, fall {s['rate_year']})", _n(s["prior_school_rate_per_1000"], 2)),
@@ -589,6 +600,7 @@ th:first-child,td:first-child{{text-align:left}}th{{background:#f1f4f8}}.big{{fo
 <h2>Method and assumptions</h2><ul class="small">
 <li>Method re-implemented from WILL's Feb 2025 write-up: added cost = (2009 salary+fringe per FTE &times; {s['inflation_factor']} inflation &minus; current salary+fringe per FTE) &times; FTEs, never below zero (districts already paying more than the inflation-adjusted 2009 level add nothing); increase on a property = its value &times; added cost &divide; district equalized value (TIF-out).</li>
 <li>Assumes the full added cost lands on the property-tax levy. Wisconsin revenue limits, state aid changes or spending cuts could change that; WILL itself says full pass-through is unlikely.</li>
+<li>Parcels with no site address (mostly vacant land and farmland) are skipped, so district and municipality value totals cover addressed parcels only. Each parcel's increase uses the same district rate either way.</li>
 <li>Property value uses the parcel layer's estimated fair market value (assessed total when missing). "Residential" means property class 1 with improvements.</li>
 <li>Sources: Wisconsin Statewide Parcel Map Database (V12); DPI longitudinal tax values and levy/rate workbooks; cost inputs from data/district_costs.csv.</li></ul>
 </body></html>"""
@@ -613,8 +625,9 @@ def write_reports(summary, home_table, munis, rows):
     return folder
 
 
-def run_district(code, home_value, added_override=None, progress=None):
-    parcels = fetch_district_parcels(code, progress)
-    summary, home_table, munis, rows = compute(code, parcels, home_value, added_override)
+def run_district(code, home_value, added_override=None, progress=None, include_owners=False):
+    parcels, excluded = fetch_district_parcels(code, progress, include_owners)
+    summary, home_table, munis, rows = compute(code, parcels, home_value, added_override, include_owners)
+    summary["parcels_excluded_no_address"] = excluded
     folder = write_reports(summary, home_table, munis, rows)
     return folder, summary

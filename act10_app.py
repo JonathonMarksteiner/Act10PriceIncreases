@@ -56,6 +56,7 @@ details summary{cursor:pointer;font-weight:600}.links a{margin-right:14px}
 <div><label>Current salary+fringe per FTE ($)</label><input id="cnow"></div><div><label>OR added annual cost ($)</label><input id="over"></div></div>
 <p class="mut" id="costnote"></p></details>
 
+<p><label style="font-weight:400"><input type="checkbox" id="owners" style="width:auto"> Include owner names and mailing addresses in <code>parcels.csv</code> (personal information; off by default)</label></p>
 <p><button id="run">Generate report</button> <button class="sec" id="sw">Statewide check</button></p>
 <div id="prog" style="display:none"><div class="bar"><div id="pb"></div></div><div class="mut" id="pt"></div></div>
 <div id="err" class="warn" style="display:none"></div></div>
@@ -86,7 +87,7 @@ $('run').onclick=async()=>{const d=cur();$('err').style.display='none';if(!d){$(
  $('run').disabled=true;$('res').style.display='none';$('prog').style.display='';$('pb').style.width='0';$('pt').textContent='Starting...';
  try{await post('/api/settings',{inflation_factor:parseFloat($('infl').value),home_value:parseFloat($('home').value.replace(/,/g,''))});
   await post('/api/cost',{code:d.code,ftes:$('ftes').value,comp_2009_per_fte:$('c09').value,comp_now_per_fte:$('cnow').value,added_cost_override:$('over').value});
-  const {id}=await post('/api/run',{code:d.code,home_value:parseFloat($('home').value.replace(/,/g,''))});
+  const {id}=await post('/api/run',{code:d.code,home_value:parseFloat($('home').value.replace(/,/g,'')),include_owners:$('owners').checked});
   for(;;){await new Promise(r=>setTimeout(r,1000));const s=await j('/api/job?id='+id);
    if(s.total){$('pb').style.width=Math.round(100*s.got/s.total)+'%';$('pt').textContent='Fetched '+s.got.toLocaleString()+' of '+s.total.toLocaleString()+' parcels'}
    if(s.error)throw new Error(s.error);
@@ -104,12 +105,12 @@ def status():
     return {"ready": ready, "settings": core.load_settings()}
 
 
-def run_job(job_id, code, home_value):
+def run_job(job_id, code, home_value, include_owners=False):
     def progress(got, total):
         with LOCK:
             JOBS[job_id].update(got=got, total=total)
     try:
-        folder, _ = core.run_district(code, home_value, progress=progress)
+        folder, _ = core.run_district(code, home_value, progress=progress, include_owners=include_owners)
         with LOCK:
             JOBS[job_id].update(done=True, folder=folder)
     except Exception as exc:  # surfaced to the UI
@@ -216,7 +217,7 @@ class Handler(BaseHTTPRequestHandler):
                 job_id = uuid.uuid4().hex
                 with LOCK:
                     JOBS[job_id] = {"got": 0, "total": 0}
-                threading.Thread(target=run_job, args=(job_id, int(b["code"]), float(b["home_value"])),
+                threading.Thread(target=run_job, args=(job_id, int(b["code"]), float(b["home_value"]), bool(b.get("include_owners"))),
                                  daemon=True).start()
                 return self._send(200, {"id": job_id})
             self._send(404, {"error": "not found"})
